@@ -9,5 +9,18 @@ def to_jaden_case(string):
     return ' '.join(lst)
     return ' '.join(word.capitalize() for word in string.split())
 
+
 print(to_jaden_case("How can mirrors be real if our eyes aren't real"))
 
+
+# https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd/train/python
+
+def paperwork(n, m):
+    # if n < 0 or m < 0:
+    #     return 0
+    # else:
+    #     return n * m
+    return 0 if n < 0 or m < 0 else n * m
+
+
+print(paperwork(5, 5))
