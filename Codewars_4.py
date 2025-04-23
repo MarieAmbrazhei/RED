@@ -24,3 +24,13 @@ def paperwork(n, m):
 
 
 print(paperwork(5, 5))
+
+
+# https://www.codewars.com/kata/5f70c883e10f9e0001c89673/python
+
+
+def flip(d, a):
+    if d == 'L':
+        return sorted(a, reverse=True)
+    else:
+        return sorted(a)
