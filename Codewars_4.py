@@ -37,6 +37,8 @@ def flip(d, a):
 
 
 # https://www.codewars.com/kata/55a996e0e8520afab9000055/train/python
+
+
 def cookie(x):
     if isinstance(x, (int, float)) and not isinstance(x, bool):
         return "Who ate the last cookie? It was Monica!"
@@ -49,3 +51,8 @@ def cookie(x):
 print(cookie(False))
 
 
+# https://www.codewars.com/kata/56dae9dc54c0acd29d00109a/train/python
+
+
+def main(verb, noun):
+    return verb + noun
