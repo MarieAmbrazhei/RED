@@ -56,3 +56,29 @@ print(cookie(False))
 
 def main(verb, noun):
     return verb + noun
+
+
+# https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/python
+
+
+def smash(words):
+    return " ".join(words).strip()
+
+
+words = ['hello', 'world', 'this', 'is', 'great']
+print(smash(words))
+
+
+# https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/train/python
+
+
+def find_needle(haystack):
+    # for i, w in enumerate(haystack):
+    #     if w == 'needle':
+    #         return f"found the needle at position {i}"
+    # return False
+    return f"found the needle at position {haystack.index('needle')}"
+
+
+haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+print(find_needle(haystack))
