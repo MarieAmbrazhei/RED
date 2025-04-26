@@ -82,3 +82,42 @@ def find_needle(haystack):
 
 haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
 print(find_needle(haystack))
+
+
+# https://www.codewars.com/kata/57089707fe2d01529f00024a/train/python
+
+
+# def check_alive(health):
+#     if health <= 0:
+#         return False
+#     else:
+#         return True
+# def check_alive(health: int):
+#     return health > 0
+#
+#
+# print(check_alive(0))
+
+
+# https://www.codewars.com/kata/55b1fd84a24ad00b32000075/train/python
+
+
+def am_I_afraid(day, num):
+    conditions = [
+        (day == 'Monday' and num == 12, True),
+        (day == 'Tuesday' and num > 95, True),
+        (day == 'Wednesday' and num == 34, True),
+        (day == 'Thursday' and num == 0, True),
+        (day == 'Friday' and num % 2 == 0, True),
+        (day == 'Saturday' and num == 56, True),
+        (day == 'Sunday' and (num == 666 or num == - 666), True)
+        ]
+
+    for condition, result in conditions:
+        if condition:
+            return result
+
+    return False
+
+
+print(am_I_afraid('Tuesday', -666))
