@@ -102,22 +102,26 @@ print(find_needle(haystack))
 # https://www.codewars.com/kata/55b1fd84a24ad00b32000075/train/python
 
 
-def am_I_afraid(day, num):
-    conditions = [
-        (day == 'Monday' and num == 12, True),
-        (day == 'Tuesday' and num > 95, True),
-        (day == 'Wednesday' and num == 34, True),
-        (day == 'Thursday' and num == 0, True),
-        (day == 'Friday' and num % 2 == 0, True),
-        (day == 'Saturday' and num == 56, True),
-        (day == 'Sunday' and (num == 666 or num == - 666), True)
-        ]
+# def am_I_afraid(day, num):
+#     conditions = [
+#         (day == 'Monday' and num == 12, True),
+#         (day == 'Tuesday' and num > 95, True),
+#         (day == 'Wednesday' and num == 34, True),
+#         (day == 'Thursday' and num == 0, True),
+#         (day == 'Friday' and num % 2 == 0, True),
+#         (day == 'Saturday' and num == 56, True),
+#         (day == 'Sunday' and (num == 666 or num == - 666), True)
+#         ]
+#
+#     for condition, result in conditions:
+#         if condition:
+#             return result
+#
+#     return False
+#
+#
+# print(am_I_afraid('Tuesday', -666))
 
-    for condition, result in conditions:
-        if condition:
-            return result
 
-    return False
+# https://www.codewars.com/kata/54530f75699b53e558002076/train/python
 
-
-print(am_I_afraid('Tuesday', -666))
