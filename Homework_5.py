@@ -53,13 +53,19 @@ def average(*args):
     #         count += num
     #         len_ls += 1
     # return count/len_ls
-    if len(args) == 0:
+    # ********
+    # ls = []
+    # for num in args:
+    #     if isinstance(num, (int, float)):
+    #         ls.append(num)
+    #
+    # if not ls:
+    #     return 0
+    # return sum(ls) / len(ls)
+    my_ls = [num for num in args if isinstance(num, (int, float))]
+    if not my_ls:
         return 0
-    ls = []
-    for num in args:
-        if isinstance(num, (int, float)):
-            ls.append(num)
-    return sum(ls)/len(ls)
+    return sum(my_ls) / len(my_ls)
 
 
-print(average(1, 2, 3, 4, 5, 6, 7, 8))
+print(average(1, 2, 3))
