@@ -14,23 +14,23 @@
 
 
 def reverse_string_manual(s):
-    # reversed_str = " "
-    # for char in range(len(s) - 1, -1, -1):
-    #    reversed_str += s[char]
-    # print(reversed_str)
+    reversed_str = " "
+    for char in range(len(s) - 1, -1, -1):
+       reversed_str += s[char]
+    print(reversed_str)
 
-    # reversed_str = s[::-1]
-    # print(reversed_str)
+    reversed_str = s[::-1]
+    print(reversed_str)
 
-    # reversed_str = ''.join(reversed(s))
-    # print(reversed_str)
+    reversed_str = ''.join(reversed(s))
+    print(reversed_str)
 
-    # reversed_str = ""
-    # i = len(s) - 1
-    # while i >= 0:
-    #     reversed_str += s[i]
-    #     i = i - 1
-    # return reversed_str
+    reversed_str = ""
+    i = len(s) - 1
+    while i >= 0:
+        reversed_str += s[i]
+        i = i - 1
+    return reversed_str
 
     reversed_str = ""
     for char in s:
